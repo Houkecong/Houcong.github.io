@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蓝印染之旅</title>
+</head>
+<style type="text/css">
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background: url(./第一页_0006_布5.png), url(./第一页_0007_背景.png) no-repeat;
+        margin-left: 5vw;
+        width: 90vw;
+        height: 100vh;
+        background-size: 100% 100%;
+        justify-items: center;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .space {
+        width: 300px;
+        height: 400px;
+    }
+
+    .cloth {
+        margin-top: 0px;
+        left: 100px;
+        z-index: 1;
+        position: relative;
+    }
+
+    .cloth1 {
+        margin-top: 0px;
+        left: 100px;
+        z-index: 2;
+        position: absolute;
+
+    }
+
+    .cloth1 img {
+        animation: jumpBox1 4s infinite;
+    }
+
+    @keyframes jumpBox1 {
+        0% {
+            transform: translate(0px, 0px);
+        }
+
+        50% {
+            transform: translate(20px, 0px);
+        }
+
+        100% {
+            transform: translate(0px, 0px);
+        }
+    }
+
+
+    .cloth2 {
+        margin: 0 auto;
+        top: 0px;
+        padding-left: 100px;
+        z-index: 3;
+        position: absolute;
+    }
+
+    .cloth2 img {
+        animation: jumpBox2 5s infinite;
+    }
+
+    @keyframes jumpBox2 {
+        0% {
+            transform: translate(0px, 0px);
+        }
+
+        50% {
+            transform: translate(10px, 0px);
+        }
+
+        100% {
+            transform: translate(0px, 0px);
+        }
+    }
+
+
+    .cloth3 {
+        margin: 0 auto;
+        top: 0px;
+        z-index: 4;
+        position: absolute;
+
+    }
+
+    .cloth3 img {
+        animation: jumpBox3 5s infinite;
+    }
+
+    @keyframes jumpBox3 {
+        0% {
+            transform: translate(0px, 0px);
+        }
+
+        50% {
+            transform: translate(-10px, 0px);
+        }
+
+        100% {
+            transform: translate(0px, 0px);
+        }
+    }
+
+    .cloth4 {
+
+        margin: 0 auto;
+        top: 0px;
+        padding-top: 0px;
+        margin-right: 50px;
+        z-index: 5;
+        position: absolute;
+    }
+
+    .cloth4 img {
+        animation: jumpBox4 3s infinite;
+    }
+
+    @keyframes jumpBox4 {
+        0% {
+            transform: translate(0px, 0px);
+        }
+
+        50% {
+            transform: translate(15px, 0px);
+        }
+
+        100% {
+            transform: translate(0px, 0px);
+        }
+    }
+
+    .name {
+        margin: 0 auto;
+        top: 0px;
+        padding-top: 0px;
+        left: 150px;
+        z-index: 6;
+        position: absolute;
+    }
+
+    .name img {
+        animation: fadeInLeft 5s;
+    }
+
+    @keyframes fadeInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-120px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .start {
+        margin: 0 auto;
+        top: 500px;
+        padding-top: 0px;
+        left: 150px;
+        z-index: 7;
+        position: absolute;
+    }
+
+    .start img {
+        animation: fade 5s;
+    }
+
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+
+        80% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+    audio{
+          display: none;
+      }
+</style>
+
+<body>
+    
+    <img width="1200px" height="700px" src="./第一页_0006_布5.png" alt="">
+    <div class="cloth1">
+        <img width="1200px" height="700px" src="./第一页_0005_布4.png" alt="">
+        <div class="cloth2">
+            <img width="1200px" height="700px" src="./第一页阴影_0004_布3.png" alt="">
+            <div class="cloth3">
+                <img width="1000px" height="700px" src="./第一页阴影_0003_布2.png" alt="">
+                <div class="cloth4">
+                    <img width="1150px" height="600px" src="./第一页_0002_布1.png" alt="">
+                    <div class="name">
+                        <img width="700px" height="400px" src="./第一页_0001_标题.png" alt="">
+                        <div class="start">
+                            <img width="400px" height="200px" src="./第一页_0000_开始按钮.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <audio controls preload="auto" autoplay loop><source src="./阪田知樹 - ドビュッシー：月の光.mp3" ></audio>
+    </div>
+</body>
+
+</html>
